@@ -2,8 +2,8 @@
 
 namespace App\Enums;
 
-enum DaySelect
+enum DaySelect: int
 {
-    case WEEKDAY;
-    case WEEKEND;
+    case WEEKDAY = 1;
+    case WEEKEND = 2;
 }

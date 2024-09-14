@@ -2,11 +2,11 @@
 
 namespace App\Enums;
 
-enum SkillLevel
+enum SkillLevel: int
 {
-    case NEWBIE;
-    case BEGINNER;
-    case INTERMEDIATE;
-    case ADVANCED;
-    case PRO;
+    case NEWBIE = 1;
+    case BEGINNER = 2;
+    case INTERMEDIATE = 3;
+    case ADVANCED = 4;
+    case PRO = 5;
 }

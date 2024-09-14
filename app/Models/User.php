@@ -75,6 +75,7 @@ class User extends Authenticatable
     public function activities(): BelongsToMany
     {
         return $this->belongsToMany(Activity::class)
+            ->using(ActivityUser::class)
             ->withPivot('skill_level', 'days_available', 'time_available');
     }
 }

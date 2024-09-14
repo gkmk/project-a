@@ -2,9 +2,9 @@
 
 namespace App\Enums;
 
-enum TimeSelect
+enum TimeSelect: int
 {
-    case MORNING;
-    case AFTERNOON;
-    case EVENING;
+    case MORNING = 1;
+    case AFTERNOON = 2;
+    case EVENING = 3;
 }

@@ -11,7 +11,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/home', \App\Livewire\Home::class)->name('dashboard');
+
+    Route::get('/activity', \App\Livewire\Activity\Index::class)->name('activity.index');
 });

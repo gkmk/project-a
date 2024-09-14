@@ -44,4 +44,14 @@ class ActivityPolicy
     {
         return false;
     }
+
+    public function detach(User $user, Activity $activity): bool
+    {
+        return true;
+    }
+
+    public function updateRelation(User $user, Activity $activity): bool
+    {
+        return true;
+    }
 }
