@@ -1,4 +1,7 @@
 <?php
+/**
+ * Copyright (c) 2024.
+ */
 
 namespace App\Models;
 
@@ -64,6 +67,7 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'role' => Roles::class,
         ];
     }
 

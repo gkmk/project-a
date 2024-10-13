@@ -1,9 +1,12 @@
 <?php
+/**
+ * Copyright (c) 2024.
+ */
 
 namespace App\Enums;
 
-enum Roles
+enum Roles: string
 {
-    case ADMINISTRATOR;
-    case USER;
+    case ADMINISTRATOR = 'administrator';
+    case USER = 'user';
 }
