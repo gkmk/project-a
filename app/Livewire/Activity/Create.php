@@ -1,4 +1,7 @@
 <?php
+/**
+ * Copyright (c) 2024.
+ */
 
 namespace App\Livewire\Activity;
 
@@ -13,7 +16,7 @@ class Create extends Component
 
     public $showActivityModal = false;
 
-    public function store()
+    public function store(): void
     {
         $this->form->store();
 

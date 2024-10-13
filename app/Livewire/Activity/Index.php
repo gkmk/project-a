@@ -1,4 +1,7 @@
 <?php
+/**
+ * Copyright (c) 2024.
+ */
 
 namespace App\Livewire\Activity;
 
@@ -18,13 +21,13 @@ class Index extends Component
     #[Computed]
     public function activities()
     {
-        return auth()->user()->activities()->paginate(10);
+        return auth()->user()->activities()->paginate();
     }
 
     public function updateActivity(int $activity): void
     {
         auth()->user()->activities()->updateExistingPivot($activity, [
-            $this->form->validate()
+            $this->form->validate(),
         ]);
     }
 

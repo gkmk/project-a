@@ -1,4 +1,7 @@
 <?php
+/**
+ * Copyright (c) 2024.
+ */
 
 return [
 
@@ -79,6 +82,8 @@ return [
     */
 
     'locale' => env('APP_LOCALE', 'en'),
+
+    'locales' => ['en', 'sl'],
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 

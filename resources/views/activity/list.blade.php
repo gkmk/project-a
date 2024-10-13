@@ -8,7 +8,10 @@
             <x-button-link>Update</x-button-link>
         @endcan
         @can('detach', $activity)
-            <x-button-link wire:click="removeActivity({{$activity->id}})">Remove</x-button-link>
+                <x-button-link
+                    wire:confirm="Are you sure?"
+                    wire:click="removeActivity({{$activity->id}})">Remove
+                </x-button-link>
         @endcan
     </td>
 </tr>
