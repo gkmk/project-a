@@ -48,28 +48,6 @@ export default {
             'Neutrals/900': '#3c3d3d',
             'Neutrals/950': '#262626'
         },
-        fontSize:
-        {
-            xs: '0.75rem',
-            sm: '0.875rem',
-            base: '1rem',
-            lg: '1.125rem',
-            xl: '1.25rem',
-            '2xl': '1.5rem',
-            '3xl': '1.875rem',
-            '4xl': '2.25rem',
-            '5xl': '3rem',
-            '6xl': '3.75rem'
-        },
-        borderRadius:
-        {
-            'rounded-0': '0rem',
-            'rounded-1': '0.3125rem',
-            'rounded-2': '0.375rem',
-            'rounded-3': '0.625rem',
-            'rounded-4': '2.25rem',
-            'rounded-5': '5.625rem'
-        },
         extend: {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
